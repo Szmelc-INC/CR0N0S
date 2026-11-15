@@ -22,3 +22,8 @@ DESIGN.md
 
 # Claude Code worktrees
 .claude/
+
+# makepkg
+/src/
+/pkg/
+/*.pkg.tar.*
