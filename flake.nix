@@ -14,7 +14,7 @@
           pname = "cr0";
           version = "0-unstable-${self.shortRev or self.dirtyShortRev or "dirty"}";
           src = ./.;
-          vendorHash = pkgs.lib.fakeHash;
+          vendorHash = "sha256-iaXTbMZzgL7u4bLfP0GqCv/pdp1eGfzeNGp5PY9IANA=";
           subPackages = [ "cmd/cr0" ];
           env.CGO_ENABLED = 0;
           ldflags = [ "-s" "-w" "-X github.com/sernik77/CR0N0S/internal/cli.Version=${self.shortRev or "dirty"}" ];

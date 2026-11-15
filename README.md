@@ -29,6 +29,19 @@ import/export and an interactive TUI.
 
 ## Install
 
+[![nix](https://github.com/Szmelc-INC/CR0N0S/actions/workflows/nix.yml/badge.svg)](https://github.com/Szmelc-INC/CR0N0S/actions/workflows/nix.yml)
+
+**Arch Linux** via [SAUR](https://github.com/Szmelc-INC/SAUR) (binary, shell completions and docs):
+
+```sh
+curl -fsSL https://szmelc-inc.github.io/SAUR/add | sudo bash   # once: adds [saur] to pacman.conf
+sudo pacman -S cr0-git
+```
+
+**Nix**: `nix run github:Szmelc-INC/CR0N0S` or `nix profile install github:Szmelc-INC/CR0N0S`.
+
+**From source**:
+
 ```sh
 make install            # builds ./cr0 and copies it to ~/.local/bin
 cr0 service install     # writes the systemd user unit
